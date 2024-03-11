@@ -76,6 +76,10 @@ export const menu = {
   ],
 };
 
+export const metadata = {
+  title: "Menu | Buckshot Bar & Grill",
+};
+
 export default function MenuPage() {
   return (
     <main>

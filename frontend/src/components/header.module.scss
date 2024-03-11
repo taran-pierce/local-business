@@ -1,5 +1,16 @@
 .header {
   .navigationWrapper {
-    background: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 1rem;
+  }
+}
+
+@media(min-width: 992px) {
+  .header {
+    .navigationWrapper {
+      grid-template-columns: auto auto;
+    }
   }
 }

@@ -1,5 +1,10 @@
 import Container from "../components/Container";
 
+export const metadata = {
+  title: "Buckshot Bar & Grill",
+  description: "Bar and grill",
+};
+
 export default function HomePage() {
   return (
    <main>

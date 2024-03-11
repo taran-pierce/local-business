@@ -1,4 +1,10 @@
+'use client'
+
 import Link from 'next/link';
+
+import { useMenu } from '../utils/useMenu';
+
+import NavigationToggle from './NavigationToggle';
 
 import styles from './navigation.module.scss';
 
@@ -18,22 +24,31 @@ export const mainLinks = [
 ];
 
 export default function Navigation() {
+  const {
+    isNavigationOpen,
+    toggleNavigation,
+  } = useMenu();
+
   return (
-    <nav
-      className={styles.navigation}
+    <div
+      className={styles.navigationWrapper}
     >
-      <ul>
-        {mainLinks.map((link) => (
-          <li
-            key={link.name}
-          >
-            <Link
-              href={link.href}
+      <nav
+        className={`${styles.navigation} ${isNavigationOpen ? styles.open : ''}`}
+      >
+        <ul>
+          {mainLinks.map((link) => (
+            <li
+              key={link.name}
             >
-            {link.name}</Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
+              <Link
+                href={link.href}
+              >
+              {link.name}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
   );
 }

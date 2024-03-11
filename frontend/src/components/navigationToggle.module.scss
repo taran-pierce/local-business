@@ -1,0 +1,12 @@
+.menuButton {
+  border: 1px solid black;
+  background: transparent;
+  padding: 2rem;
+  font-weight: bold;
+}
+
+@media(min-width: 992px) {
+  .menuButton {
+    display: none;
+  }
+}

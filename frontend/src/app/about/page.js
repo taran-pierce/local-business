@@ -1,5 +1,9 @@
 import Container from "../../components/Container";
 
+export const metadata = {
+  title: "About | Buckshot Bar & Grill",
+};
+
 export default function AboutPage() {
   return (
     <main>

@@ -5,7 +5,7 @@ export default function Logo() {
     <div
       className={styles.logo}
     >
-      <p>logo</p>
+      <h1>Buckshot Bar & Grill</h1>
     </div>
   );
 }
