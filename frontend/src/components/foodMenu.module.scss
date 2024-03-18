@@ -1,3 +1,44 @@
 .foodMenuWrapper {
-  background: lavender;
+  // border: 1px solid black;
+  padding: 1rem 0;
+  display: grid;
+  gap: 1rem;
+
+  .menuSection {
+    display: grid;
+    // border: 1px solid black;
+    padding: 1rem 0;
+    gap: 1rem;
+
+    .itemWrapper {
+      border: 1px solid black;
+      padding: 1rem;
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  .foodMenuWrapper {
+    // border: 1px solid black;
+    padding: 1rem 0;
+    display: grid;
+    gap: 1rem;
+  
+    .menuSection {
+      display: grid;
+      // border: 1px solid black;
+      padding: 1rem 0;
+      gap: 1rem;
+      grid-template-columns: 1fr 1fr;
+  
+      .description {
+        grid-column: span 2;
+      }
+  
+      .itemWrapper {
+        border: 1px solid black;
+        padding: 1rem;
+      }
+    }
+  }
 }

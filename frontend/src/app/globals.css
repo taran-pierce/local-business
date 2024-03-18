@@ -21,6 +21,7 @@ html {
 
 body {
   font-size: 1.8rem;
+  background: url('/images/wood-texture.png') top left repeat;
 }
 
 a {

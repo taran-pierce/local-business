@@ -1,3 +1,5 @@
+import { Rye } from "next/font/google";
+
 import Container from "../../components/Container";
 import FoodMenu from "../../components/FoodMenu";
 
@@ -76,6 +78,11 @@ export const menu = {
   ],
 };
 
+const rye = Rye({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
 export const metadata = {
   title: "Menu | Buckshot Bar & Grill",
 };
@@ -84,7 +91,7 @@ export default function MenuPage() {
   return (
     <main>
       <Container>
-        <h1>Menu</h1>
+        <h1 className={rye.className}>Menu</h1>
         <FoodMenu menu={menu} />
       </Container>
     </main>

@@ -1,15 +1,19 @@
 .header {
   .navigationWrapper {
+    // background: url('/images/wood-texture.png') top left repeat;
     display: grid;
+    gap: 1rem;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 1rem;
+    padding-top: 1rem;
   }
 }
 
 @media(min-width: 992px) {
   .header {
     .navigationWrapper {
+      max-width: 960px;
+      margin: 0 auto;
       grid-template-columns: auto auto;
     }
   }
