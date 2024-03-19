@@ -13,8 +13,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Buckshot Bar & Grill",
-  description: "Bar and grill",
+  title: "Local Restaurant",
+  description: "Local Restaurant",
   authors: [{ name: 'Taran Pierce' }],
   robots: {
     index: false,

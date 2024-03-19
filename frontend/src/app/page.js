@@ -4,8 +4,8 @@ import Container from "../components/Container";
 
 
 export const metadata = {
-  title: "Buckshot Bar & Grill",
-  description: "Bar and grill",
+  title: "Local Restaurant",
+  description: "Local Restaurant",
 };
 
 const rye = Rye({
@@ -34,7 +34,7 @@ export default function HomePage() {
           marginBottom: '1rem',
         }}
         className={rye.className}
-      >Buckshot Bar & Grill</h1>
+      >Local Restaurant</h1>
        <p>Casual Family Dining with kids meals, burgers, sandwiches, and dinners including steaks! Full bar and full kitchen!</p>
        <p>Come see us tonight!</p>
      </Container>
